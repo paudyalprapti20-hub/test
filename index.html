@@ -1,36 +1,134 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/style.css">
         <title>
             My Portfolio
         </title>
-        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
-        <nav>
+        <header>
+    <nav>
         <div class="container">
-            <div class="logo">
-            <img src="images/logo.jpg" alt="logo" width="80">
-        </div>
-            <ul class="items">
-                <li><a href="#">Home </a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
 
-        <form>
-            <input type="text" placeholder="Search">
-            <button type="submit">Search</button>
-        </form>
-        <h1>About Me</h1>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo" width="80">
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <form>
+                <div class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+</header>
+        <main>
+            <section id="about">
+                <div class="about me">
+                    <h1>About Me</h1>
         <img src="images/image.png" alt="photo" width="100">
         <p> I am Prapti Paudyal, a second-year Bachelor of Information Technology (BIT) student at Model Institude of Technology(MIT). I am passionate about technology and web development, with a growing interest in building modern, user-friendly and functional websites.
         </p>
-        <h2>My Skills</h2>
+        </div>
+        </section>
+                
+        
+
+        <section id="skills">
+            <div class="myskills">
+                <h2>My Skills</h2>
+        <dl>
+            <dt>Programming Language</dt>
+            <dd>Java, Python, JS, C++</dd>
+            <dt>Database</dt>
+            <dd>MySql, MongoDB</dd>
+           
+            <dt>Tools</dt>
+            <dd>Ms Word, Excel, Canva, Visual Studio Code, IntellJ, Powepoint</dd>
+
+            <dt>Framework</dt>
+            <dd>Dotnet, Springboot, Angular, Django</dd>
+        </dl>
+            </div>
+        
+        </section>
+
+        <section id="project">
+            <div class="project">
         <h2>My Project</h2>
+        <article>
+            <h3>E-commerce Site</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit debitis nisi illo eos dolorem quod vero quo. Ea sed rerum nihil reiciendis nam! Ipsam corrupti labore perferendis adipisci reprehenderit minus.</p>
+        </article>
+        <article>
+            <h3>LMS Application</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum laboriosam cum nobis deleniti quae sapiente voluptas consequatur autem ducimus. Quis architecto nulla officia? Praesentium voluptates accusantium vel numquam totam?</p>
+        </article>
+        <article>
+            <h3>Inventory Management System</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, dolor aspernatur! Nam, maiores recusandae distinctio qui sequi consequuntur ipsam eos, error non unde nobis architecto doloribus vel nihil, consectetur eum.</p>
+        </article>
+        </div>
+        </section>
+
+        <section id="education">
+            <div class="education">
+        <h2>Education</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                <th>S.N</th>
+                <th>Level</th>
+                <th>Institution Name</th>
+                <th>GPA</th>
+                <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Secondary Level</td>
+                    <td>The Excelsior School</td>
+                    <td>3.85</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Higher Secondary Level</td>
+                    <td>Uniglobe SS/ College</td>
+                    <td>3.40</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor Degree</td>
+                    <td>Model Institute of Technology</td>
+                    <td>Ongoing</td>
+                    <td>Ongoing</td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        </section>
+
+        <section id="message">
+            <div class="message">
         <h2>Send Message</h2>
         <form>
         <label>Name</label>
@@ -47,46 +145,23 @@
         <br> <br>
         <button>Submit</button>
         </form>
-        
+        </div>
+        </section>
+
+        <section id="Connect">
+            <div class="connect">
         <h3>Connect With Me</h3>
-        <a href="https://www.facebook.com/prapti.poudel.731" target="_blank"><img src="images/facebook.png" alt="fb" width="30px"></a>
-        <a href="https://www.instagram.com/_praptip_/" target="_blank"><img src="images/instagram.webp" alt="insta" width="30px">
-        <img src="" alt=""></a>
-        <a href="https://www.linkedin.com/in/prapti-paudyal-026b30312/" target="_blank"><img src="images/linkdin.png" alt="" width="30px"></a>
+        <a href="https://www.facebook.com/prapti.poudel.731" target="_blank"><img src="images/facebook.png" alt="fb" width="30"></a>
+        <a href="https://www.instagram.com/_praptip_/" target="_blank"><img src="images/instagram.webp" alt="insta" width="30"></a>
+        <a href="https://www.linkedin.com/in/prapti-paudyal-026b30312/" target="_blank"><img src="images/linkdin.png" alt="linkdn" width="30"></a>
         <br> <br>
+        </div>
+        </section>
+        </main>
 
         <footer>
             &copy; All Rights Reserved
         </footer>
-        
-        <!-- <table>
-            <tr>
-                <th>SN</th>
-                <th>Subject</th>
-                <th>Teacher</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Software Engineer</td>
-                <td>Gaman Aryal</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Statics</td>
-                <td>Om Narayan Pradhan</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Web Development</td>
-                <td>Gaurav Raut</td>
-            </tr>
-        </table> -->
-        <!-- <form>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-        </form> -->
 
     </body>
 </html>

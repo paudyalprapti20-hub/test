@@ -10,3 +10,68 @@ nav .items {
     gap: 50px;
     list-style: none;
 } */
+/* body{
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(88, 179, 215);
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    flex: 1;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: ;
+}
+.logo{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 1rem;
+}
+.home,
+.about,
+.project,
+.myskills,
+.education,
+.message,
+.connect,
+.form,
+.find-me {
+    background-color: rgb(206, 232, 241);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px black;
+} 
+ */
