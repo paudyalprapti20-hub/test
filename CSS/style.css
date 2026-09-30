@@ -1,4 +1,4 @@
-/* nav .container {
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@ nav .items {
     gap: 50px;
     list-style: none;
 } */
-/* body{
+ body{
     background-color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
@@ -74,4 +74,154 @@ main{
     border-radius: 10px;
     box-shadow: 0 4px 12px black;
 } 
- */
+.about {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.about-image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project article {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.project article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+.project article a {
+  text-decoration: none; /* Removes the underline */
+  color: #3182ce;        /* Sets a custom link color */
+  font-weight: 600;
+}
+
+/* Optional: Bring back the underline only when hovering */
+.project article a:hover {
+  text-decoration: underline;
+}
+.welcome-section {
+  text-align: center;
+  padding: 40px 20px 20px 20px; /* Adjust spacing as needed */
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #000; /* Or your preferred text color */
+  font-weight: bold;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #55b3d9; /* Matching your blue navbar background */
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .welcome-section {
+        margin-left: 20px;
+    }
+    @media (min-width: 769px) and (max-width: 1025px) {
+
+    table {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    th, td {
+        padding: 5px;
+        word-break: break-word;
+    }
+
+}
+
+}
+/* Education Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+th {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 4px;
+        word-break: break-word;
+    }
+}
