@@ -379,3 +379,101 @@ nav .container {
 .connect img:hover {
     transform: scale(1.2);
 }
+
+/* ========================================
+   10. RESPONSIVE DESIGN
+/* Tablets and mobile devices */
+@media (max-width: 768px) {
+
+    nav .container {
+        flex-direction: column;
+    }
+    .navbar ul {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text p {
+        text-align: left;
+    }
+    .about-image {
+        flex-basis: auto;
+    }
+    .myskills dl {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .myskills dd {
+        margin-bottom: 10px;
+    }
+    .welcome-section h1 {
+        font-size: 1.8rem;
+    }
+    main {
+        padding: 10px;
+    }
+    .about,
+    .project,
+    .myskills,
+    .education,
+    .message,
+    .connect {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    .education table {
+        font-size: 14px;
+    }
+    .education th,
+    .education td {
+        padding: 6px;
+    }
+    .message input,
+    .message textarea {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+
+    .navbar ul {
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .search-form input {
+        width: 150px;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-text h1 {
+        font-size: 25px;
+    }
+
+    .project article {
+        padding: 15px;
+    }
+
+    .education {
+        overflow-x: auto;
+    }
+
+    .education table {
+        min-width: 480px;
+    }
+
+    .connect img {
+        width: 32px;
+        height: 32px;
+    }
+}
