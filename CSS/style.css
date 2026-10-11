@@ -294,10 +294,7 @@ nav .container {
 }
 
 
-/* ========================================
-   7. CONTACT FORM
-======================================== */
-
+ 7. CONTACT FORM
 .message h2 {
     margin-bottom: 20px;
     font-size: 28px;
@@ -308,7 +305,6 @@ nav .container {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 .message input,
 .message textarea {
     width: 100%;
@@ -319,19 +315,16 @@ nav .container {
     font-family: inherit;
     font-size: 16px;
 }
-
 .message textarea {
     height: 120px;
     resize: vertical;
 }
-
 .message input:focus,
 .message textarea:focus {
     outline: none;
     border: 2px solid #4fa8c9;
     background-color: #f8fdff;
 }
-
 .message button {
     padding: 10px 24px;
     background-color: #4fa8c9;
@@ -343,7 +336,6 @@ nav .container {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .message button:hover {
     background-color: #368eaf;
 }
@@ -476,4 +468,93 @@ nav .container {
         width: 32px;
         height: 32px;
     }
+}
+
+/* ========================================
+   7. CERTIFICATIONS IMAGE SLIDER
+======================================== */
+#portfolioSlider {
+    position: relative;
+    max-width: 550px;       /* Keeps the slider container at a standard width */
+    margin: 0 auto;
+    overflow: hidden;       /* Crucial: Crops out the hidden images waiting in line */
+    border-radius: 10px;
+    background-color: #fff;
+     padding: 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. The horizontal flex tracking line layout */
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding speed */
+}
+
+.slide {
+    min-width: 100%;        /* Stops the next image from squishing into this one */
+    flex-shrink: 0;         /* Prevents browsers from shrinking the widths */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;           /* Automatically adapts height proportionally without distorting */
+    max-height: 450px;      /* Standard vertical viewing height constraint */
+    object-fit: contain;    /* Prevents cropping, keeping text highly sharp and readable */
+    display: block;
+}
+
+/* 5. Directional Arrow Buttons Positions */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(22, 50, 79, 0.65);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(22, 50, 79, 0.9);
+}
+
+.slider-btn.prev { left: 12px; }
+.slider-btn.next { right: 12px; }
+
+/* 6. Navigation Indicator Dots Layout styles */
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.slider-dots .dot.active {
+    background-color: #ffffff;
+    transform: scale(1.3);
 }
